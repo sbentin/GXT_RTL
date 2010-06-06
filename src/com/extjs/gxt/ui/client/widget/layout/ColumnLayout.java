@@ -13,7 +13,6 @@ import com.extjs.gxt.ui.client.util.Size;
 import com.extjs.gxt.ui.client.widget.Component;
 import com.extjs.gxt.ui.client.widget.Container;
 import com.extjs.gxt.ui.client.widget.Layout;
-import com.google.gwt.i18n.client.LocaleInfo;
 
 /**
  * This layout positions and sizes the container's children in columns horizontally. Each component may specify its width in pixels or as

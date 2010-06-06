@@ -7,7 +7,6 @@
  */
 package com.extjs.gxt.ui.client.widget;
 
-import com.extjs.gxt.ui.client.GXT;
 import com.extjs.gxt.ui.client.core.El;
 import com.extjs.gxt.ui.client.core.Template;
 import com.extjs.gxt.ui.client.event.BaseEvent;

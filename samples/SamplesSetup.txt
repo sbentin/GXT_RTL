@@ -1,0 +1,45 @@
+Quick Setup for Ext GWT 2.1.1 Samples
+===========================
+
+Note : Ext GWT 2.1.1 RTL requires GWT 2.0.3 or later and it is assumed you are using the eclipse Google web toolkit plugin for eclipse
+	   and that you have also installed the plugin for firefox and ie.
+
+STEP 1 -> Create a GWT 2.0.x project within Eclipse. Best to call it WidgetDashboard
+		  Use package name: "com.centimia.gxt.sample.widgetdashboard"
+		  uncheck "Use Google App Engine"
+
+STEP 2 -> delete all the google stuff from under the package "com.centimia.gxt.sample.widgetdashboard"
+
+STEP 3 -> add the gxt.jar from the lib directory to your classpath.
+		  a. Right click on project name in 'Package Explorer'.
+		  b. Select 'Properties' from content menu.
+		  c. Select 'Java Build Path'.
+		  d. Select 'Libraries' tab.
+		  e. Add the gxt.jar either with 'Add JARs...' or 'Add External JARs...'.
+		  
+STEP 4 -> under 'src', if not created, create the package "com.centimia.gxt.sample.widgetdashboard"
+
+STEP 5 -> copy all the contents from samples/com.centimia.gxt.sample.widgetdashboard to your new project
+		  "com.centimia.gxt.sample.widgetdashboard" package.
+
+STEP 6 -> copy all the contents from samples/com.google.gwt.sample.showcase to your new project
+		  "com.google.gwt.sample.showcase" package. Add the package as it does not exist.
+
+STEP 7 -> copy all the contents from samples/com.extjs.gxt.samples to your new project
+		  "com.extjs.gxt.samples" package. Add the package as it does not exist.
+	  
+STEP 8 -> Copy the contents of the /resources folder to 'resources' folder in your war folder.
+
+STEP 9 -> Copy the /images directory to the war directory.
+
+STEP 10 -> replace the WidgetDesktop.css and WidgetDesktop.html in the war directory with the corresponding files from
+		  samples/war from download.
+
+STEP 11 -> replace the web.xml file in war directory with file from samples/war/WEB-INF
+
+STEP 12 -> GWT compile project. You only need the WidgetDashboard entry point.
+	  
+Basically you're all set. To execute just copy the url from the Development Mode Tab into firefox or ie. To see the screen in RTL add 
+'&locale=iw' at the end of the url. Currently the samples are configured with 'iw' locale, which is a RTL locale. You can change this.
+
+See the general Setup instructions for more information on using RTL.

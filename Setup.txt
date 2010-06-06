@@ -1,0 +1,42 @@
+Quick Setup for Ext GWT 2.1.1 Samples
+===========================
+
+Note : Ext GWT 2.1.1 RTL requires GWT 2.0.3 or later and it is assumed you are using the eclipse Google web toolkit plugin for eclipse
+	   and that you have also installed the plugin for firefox and ie.
+
+STEP 1 -> Create a GWT 2.0.x project within Eclipse.
+
+STEP 2 -> add the gxt.jar from the lib directory to your classpath.
+		  a. Right click on project name in 'Package Explorer'.
+		  b. Select 'Properties' from content menu.
+		  c. Select 'Java Build Path'.
+		  d. Select 'Libraries' tab.
+		  e. Add the gxt.jar either with 'Add JARs...' or 'Add External JARs...'.
+		  
+		  Add GXT jar to launch configuration.
+		  a. Choose Run / Open Run Dialog.
+		  b. Select your appropriate launch configuration under 'Java Application'.
+		  c. Select the 'Classpath' tab.
+		  d. Add the gxt.jar to the classpath.		  
+		  
+STEP 3 -> Copy the contents of the /resources folder to 'resources' folder in your war folder.
+
+STEP 4 -> for RTL to work you will need to include the gxt-all-rtl.css. 
+		  <link rel="stylesheet" type="text/css" href="resources/css/gxt-all-rtl.css">
+		  If you want to be able to flip according to locale see in the samples how to do it.
+
+STEP 4b -> If you are using Charts, add the following script to your host page.
+		  <script language='javascript' src='{foldername}/flash/swfobject.js'></script>
+
+STEP 5 -> Add the following entry to you projects module xml file.
+		  <inherits name='com.extjs.gxt.ui.GXT'/>
+
+STEP 6 -> Ext GWT requires the following doctype (quirksmode).
+		  <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+	  
+Basically you're all set. To execute just copy the url from the Development Mode Tab into firefox or ie.
+
+To support rtl, apart from code changes more changes were made to images. All of the RTL images are in resources/images/rtl directory. 
+The gxt-all-rtl.css is a full replacement to the gxt-all.css. This css and images only support the blue theme of extjs. 
+
+For examples you can follow the instructions in the samples sub directory.
